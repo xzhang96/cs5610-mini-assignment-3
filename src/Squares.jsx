@@ -1,4 +1,3 @@
-// import { render } from '@testing-library/react';
 import React from 'react';
 import './index.css';
 
@@ -20,7 +19,6 @@ export default class Squares extends React.Component {
 
     switchColor() {
         let c = document.getElementById(this.state.position);
-        // let c = document.getElementById("s1");
         if (this.state.color === "white") {
             this.props.clickedFunc("black");
             c.style.backgroundColor = "black";
